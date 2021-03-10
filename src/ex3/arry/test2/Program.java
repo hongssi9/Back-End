@@ -32,6 +32,8 @@ public class Program {
 			if(i<6)
 				System.out.print(",");
 			
+			System.out.println("안녕하세요");
+			
 		}
 
 		// 3. names 배열의 이름을 다음처럼 콘솔에 출력한다.
