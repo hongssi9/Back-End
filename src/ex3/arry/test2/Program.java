@@ -17,27 +17,33 @@ public class Program {
 		Scanner fscan = new Scanner(fis);
 
 		int index = 0;
-		while(fscan.hasNextLine()) {
+		while (fscan.hasNextLine()) {
 			String name = fscan.nextLine();
 			names[index++] = name;
 		}
-		
-	
+
 		fscan.close();
 		fis.close();
-		
-		for(int i=0;i<7;i++) {
-			System.out.printf("%s",names[i]);
-			
-			if(i<6)
-				System.out.print(",");
-			
-			System.out.println("안녕하세요");
-			
-		}
+
+//		for (int i = 0; i < 7; i++) {
+//			System.out.printf("%s", names[i]);
+//
+//			if (i < 6)
+//				System.out.print(",");
+//			
+//			
+//			
+//
+//			for(int j=0; j<i; j++) {
+//				System.out.printf("%s",names[j]);
+//				
+//				if(j<i-1)
+//					System.out.print(",");
+//			}
+
+//		}
 
 		// 3. names 배열의 이름을 다음처럼 콘솔에 출력한다.
-		
 
 	}
 
