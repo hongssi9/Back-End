@@ -13,17 +13,7 @@ public class Casting {
 		double d_num = Double.valueOf(s_num); //String -> Double
 		float f_num = Float.valueOf(s_num); //String -> Float
 		
-		int inum = 10;
-		String snum2;
-				
-		s_num = String.valueOf(i_num); //문자 -> 숫자 1번방식
-		s_num = Integer.toString(i_num); //문자 -> 숫자 2번방식
-		s_num = ""+i_num; //문자 -> 숫자 3번방식
 		
-//		
-		int i_numm;
-		i_numm = (int)d_num;
-		i_num = (int)f_num;
 		
 	}
 
