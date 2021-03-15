@@ -34,7 +34,7 @@ public class covid {
 //		Integer.parseInt("28"); // ->28
 //		Double.parseDouble("29.34"); // ->29.34
 
-		FileInputStream fis = new FileInputStream("src/test/covid.txt"); 
+		FileInputStream fis = new FileInputStream("res/covid.txt"); 
 		Scanner scan = new Scanner(fis); //
 
 		int total = 0; //더미값이 생기니까 0으로 초기화

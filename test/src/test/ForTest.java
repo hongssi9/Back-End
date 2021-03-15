@@ -1,5 +1,7 @@
 package test;
 
+import java.util.Scanner;
+
 public class ForTest {
 
 	public static void main(String[] args) {
@@ -24,6 +26,8 @@ public class ForTest {
 //			}
 //		}
 //		
+		
+		
 		
 		int[] test = {90,25,67,45,80};
 		
