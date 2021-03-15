@@ -8,24 +8,42 @@ import java.util.Scanner;
 public class covidtest {
 
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
-		FileInputStream text = new FileInputStream("res/covid.txt");
-		Scanner sc =new Scanner(text);
-		String line = sc.nextLine();
+	
+		FileInputStream text= new FileInputStream("res/covid.txt");
+		Scanner sc = new Scanner(text);
+		sc.nextLine();
 		
-		int total = 0;
+		String[][] rows = new String[2][];
 		
-		while(sc.hasNext()) {
+		
+		String line;
+		
+		for(int i=0; i<2; i++) {
 			line = sc.nextLine();
-			String[] covid = line.split(",");
-			
-			System.out.println(covid[3]);
-			
-			total += Integer.parseInt(covid[3]);
+			rows[i] = line.split(",");
 		}
 		
-		System.out.printf("ÃÑÇÕÀº : %d",total);
-	
+		sc.close();
+		text.close();
+		
+		for(int j=0; j<2; j++) {
+		for(int i=0; i<10; i++) {
+			System.out.printf(rows[j][i]);
+			
+		if(i<9) 
+			System.out.printf(",");
+			
+		
+			}
+		System.out.println();
+
+		}
+		
+		
+		}
+		
+		
 		
 	}
-}
+
+
