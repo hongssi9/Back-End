@@ -9,37 +9,28 @@ public class covidtest {
 
 	public static void main(String[] args) throws IOException {
 	
-		FileInputStream text= new FileInputStream("res/covid.txt");
-		Scanner sc = new Scanner(text);
-		sc.nextLine();
-		
-		String[][] rows = new String[2][];
-		
-		
-		String line;
-		
-		for(int i=0; i<2; i++) {
-			line = sc.nextLine();
-			rows[i] = line.split(",");
-		}
-		
-		sc.close();
-		text.close();
-		
-		for(int j=0; j<2; j++) {
-		for(int i=0; i<10; i++) {
-			System.out.printf(rows[j][i]);
-			
-		if(i<9) 
-			System.out.printf(",");
-			
-		
+		int count = 0;
+		String[][] rows;
+		// 레코드 개수를 알아내는 코드
+		{
+			FileInputStream fis = new FileInputStream("res/covid.txt");
+			Scanner sc = new Scanner(fis);
+
+			// while 반복하면서 count++연산을한다 ->마지막 줄을 만날 때까지
+			while (sc.hasNextLine()) {
+				sc.nextLine();
+				count++;
+//				System.out.println(count);
+
 			}
-		System.out.println();
+
+			sc.close();
+			fis.close();
+
+			count--;
 
 		}
-		
-		
+		System.out.printf("텍스트 총 몇줄 : %d",count);
 		}
 		
 		
