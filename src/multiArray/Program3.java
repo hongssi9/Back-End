@@ -25,6 +25,7 @@ public class Program3 {
 
 		}
 
+		covid19[] list = new covid
 		// count에서 받은 값으로 총 몇줄인지 알았으니까 그것으로 배열에다가 값을 저장하는 코드
 		{
 			rows = new String[count][];

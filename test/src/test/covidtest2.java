@@ -55,15 +55,15 @@ public class covidtest2 {
 			// 일별 가장 많은 검사수와 그 날자 *
 			int max = 0;
 			String day = "";
-			for (int i = 0; i < count; i++) {
-				int box = Integer.parseInt(rows[i][3]);
-				if (max < box) {
+			int box = 0;
+			for(int i=0; i<count; i++) {
+				box = Integer.parseInt(rows[i][3]);
+				if(max < box) {
 					max = box;
 					day = rows[i][0];
-
 				}
 			}
-			System.out.printf("검사수%d 날자%s\n", max, day);
+			System.out.printf("%s %d\n",day,max);
 
 		}
 
