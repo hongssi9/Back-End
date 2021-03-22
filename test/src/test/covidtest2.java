@@ -12,7 +12,7 @@ public class covidtest2 {
 	public static void main(String[] args) throws IOException {
 		String[][] rows;
 		int count = 0;
-		// ·¹ÄÚµå °³¼ö¸¦ ¾Ë¾Æ³»´Â ÄÚµå (count)
+		// ë ˆì½”ë“œ ê°œìˆ˜ë¥¼ ì•Œì•„ë‚´ëŠ” ì½”ë“œ (count)
 		{
 			FileInputStream text = new FileInputStream("res/covid.txt");
 			Scanner sc = new Scanner(text);
@@ -25,7 +25,7 @@ public class covidtest2 {
 
 		}
 
-		// count¿¡¼­ ¹ŞÀº °ªÀ¸·Î ÃÑ ¸îÁÙÀÎÁö ¾Ë¾ÒÀ¸´Ï±î ±×°ÍÀ¸·Î ¹è¿­¿¡´Ù°¡ °ªÀ» ÀúÀåÇÏ´Â ÄÚµå *
+		// countì—ì„œ ë°›ì€ ê°’ìœ¼ë¡œ ì´ ëª‡ì¤„ì¸ì§€ ì•Œì•˜ìœ¼ë‹ˆê¹Œ ê·¸ê²ƒìœ¼ë¡œ ë°°ì—´ì—ë‹¤ê°€ ê°’ì„ ì €ì¥í•˜ëŠ” ì½”ë“œ *
 		{
 			rows = new String[count][];
 			FileInputStream text = new FileInputStream("res/covid.txt");
@@ -39,7 +39,7 @@ public class covidtest2 {
 
 		}
 
-		// °Ë»ç ÁøÇàÀÚ¼ö ÃÑÇÕ
+		// ê²€ì‚¬ ì§„í–‰ììˆ˜ ì´í•©
 		{
 			int total = 0;
 
@@ -52,7 +52,7 @@ public class covidtest2 {
 		}
 
 		{
-			// ÀÏº° °¡Àå ¸¹Àº °Ë»ç¼ö¿Í ±× ³¯ÀÚ *
+			// ì¼ë³„ ê°€ì¥ ë§ì€ ê²€ì‚¬ìˆ˜ì™€ ê·¸ ë‚ ì *
 			int max = 0;
 			String day = "";
 			int box = 0;
@@ -67,7 +67,7 @@ public class covidtest2 {
 
 		}
 
-		// È®ÁøÀÚ ¼ö°¡ ´Ã¾î³­ ÀÏÀÚ¿Í ¼ö¸¦ Ãâ·ÂÇÏ½Ã¿À.
+		// í™•ì§„ì ìˆ˜ê°€ ëŠ˜ì–´ë‚œ ì¼ìì™€ ìˆ˜ë¥¼ ì¶œë ¥í•˜ì‹œì˜¤.
 		{
 			int box = 0;
 			int sum = 0;
@@ -80,7 +80,7 @@ public class covidtest2 {
 					box = move;
 					day = rows[i][0];
 					index++;
-					System.out.printf("%dÀÏÀÚ:%s ´Ã¾î³­¼ö:%d\n ", index, day, sum);
+					System.out.printf("%dì¼ì:%s ëŠ˜ì–´ë‚œìˆ˜:%d\n ", index, day, sum);
 				}
 			}
 
@@ -89,7 +89,7 @@ public class covidtest2 {
 		String[][] newarr;
 		int count2 = 0;
 		{
-			// È®ÁøÀÚ ¼ö°¡ ´Ã¾î³­ ÀÏÀÚ¿Í ¼ö¸¦ ´ÙÀ½ ¹è¿­¿¡ ´ã¾ÆÁÖ½Ã¿À.
+			// í™•ì§„ì ìˆ˜ê°€ ëŠ˜ì–´ë‚œ ì¼ìì™€ ìˆ˜ë¥¼ ë‹¤ìŒ ë°°ì—´ì— ë‹´ì•„ì£¼ì‹œì˜¤.
 			int box = 0;
 			int sum = 0;
 			int index = 0;
@@ -129,7 +129,7 @@ public class covidtest2 {
 
 			}
 			for(int i=0;i<count2;i++) {
-				System.out.printf("³¯ÀÚ%s ¼ıÀÚ%s\n",newarr[i][0],newarr[i][1]);
+				System.out.printf("ë‚ ì%s ìˆ«ì%s\n",newarr[i][0],newarr[i][1]);
 			}
 
 		}

@@ -6,33 +6,33 @@ public class Program2 {
 
 	public static void main(String[] args) {
 	
-		String[] names = {"°­È£µ¿","À¯Àç¼®","ÇÏÇÏ","±èÁöÈ£","±èÇöÁØ","±èÅÂÈñ","¹Ú¹ÎÁ¤"};
+		String[] names = {"ê°•í˜¸ë™","ìœ ìž¬ì„","í•˜í•˜","ê¹€ì§€í˜¸","ê¹€í˜„ì¤€","ê¹€íƒœí¬","ë°•ë¯¼ì •"};
 		
 		
-//		String n1 = "È«±æµ¿";
-//		String n2 = "È«±æµ¿";
-//		String n3 = new String("È«±æµ¿");
-//		String n4 = new String("È«±æµ¿");
+//		String n1 = "í™ê¸¸ë™";
+//		String n2 = "í™ê¸¸ë™";
+//		String n3 = new String("í™ê¸¸ë™");
+//		String n4 = new String("í™ê¸¸ë™");
 //		
 //		System.out.println(n1 == n2); 
 //		System.out.println(n1.equals(n2));
-//		System.out.println(n3 == n4); //¹®ÀÚ¿­ÀÌ ¾Æ´Ñ °´Ã¼¸¦ ºñ±³ÇÑ´Ù.
-//		System.out.println(n3.equals(n4)); //equals°´Ã¼³¢¸® ³»¿ëÀ» ºñ±³ÇÒ ¼ö ÀÖ°ÔÇØÁØ´Ù.
+//		System.out.println(n3 == n4); //ë¬¸ìžì—´ì´ ì•„ë‹Œ ê°ì²´ë¥¼ ë¹„êµí•œë‹¤.
+//		System.out.println(n3.equals(n4)); //equalsê°ì²´ë¼ë¦¬ ë‚´ìš©ì„ ë¹„êµí•  ìˆ˜ ìžˆê²Œí•´ì¤€ë‹¤.
 //		
 //		String fileName = "photo.jpg";
-//		System.out.println(fileName.length()); //¹®ÀÚ¿­ ±æÀÌ¸¦ º¸¿©ÁÜ
-//		System.out.println(fileName.indexOf(".")); // "." ³ª¿À±âÀüÀÌ ¸î°³ÀÎÁö º¸¿©¤ÅÁÜ
-//		System.out.println(fileName.substring(3)); //3¹øÂ° Á¦¿ÜÇÏ°í º¸¿©ÁÜ
-//		System.out.println(fileName.substring(3,5)); //3¹øÂ° Á¦¿ÜÇÏ°í 5¹øÂ° ±îÁö º¸¿©ÁÜ
+//		System.out.println(fileName.length()); //ë¬¸ìžì—´ ê¸¸ì´ë¥¼ ë³´ì—¬ì¤Œ
+//		System.out.println(fileName.indexOf(".")); // "." ë‚˜ì˜¤ê¸°ì „ì´ ëª‡ê°œì¸ì§€ ë³´ì—¬ã…•ì¤Œ
+//		System.out.println(fileName.substring(3)); //3ë²ˆì§¸ ì œì™¸í•˜ê³  ë³´ì—¬ì¤Œ
+//		System.out.println(fileName.substring(3,5)); //3ë²ˆì§¸ ì œì™¸í•˜ê³  5ë²ˆì§¸ ê¹Œì§€ ë³´ì—¬ì¤Œ
 //		
-//		int pos = fileName.indexOf("."); //indexOf()´Â Æ¯Á¤ ¹®ÀÚ³ª ¹®ÀÚ¿­ÀÌ ¾Õ¿¡¼­ºÎÅÍ Ã³À½ ¹ß°ßµÇ´Â ¹®ÀÚ¿­±îÁö¸¦ Ã£´Â´Ù.
-//		System.out.println(fileName.substring(0,pos)); //Á¦¿Ü¾øÀÌ Ã³À½ºÎÅÍ pos-> .ÀÌ ÂïÈ÷±â Àü±îÁö Ãâ·Â
+//		int pos = fileName.indexOf("."); //indexOf()ëŠ” íŠ¹ì • ë¬¸ìžë‚˜ ë¬¸ìžì—´ì´ ì•žì—ì„œë¶€í„° ì²˜ìŒ ë°œê²¬ë˜ëŠ” ë¬¸ìžì—´ê¹Œì§€ë¥¼ ì°¾ëŠ”ë‹¤.
+//		System.out.println(fileName.substring(0,pos)); //ì œì™¸ì—†ì´ ì²˜ìŒë¶€í„° pos-> .ì´ ì°ížˆê¸° ì „ê¹Œì§€ ì¶œë ¥
 //		
 //		System.out.println(fileName.compareTo("ohoto.jpg") > 0);
-		//photo.jpgº¸´Ù fuleNameÀÌ ÇÏ³ª ´õ Å©´Ù fileNameÅ©¸é + photo°¡ ´õ Å©¸é -
-		//¹®ÀÚ¿­Àº ÀüÃ¼°¡ ¾Æ´Ñ Ã¹±ÛÀÚ Å©±â¸¸ ºñ±³ÇÑ´Ù.
+		//photo.jpgë³´ë‹¤ fuleNameì´ í•˜ë‚˜ ë” í¬ë‹¤ fileNameí¬ë©´ + photoê°€ ë” í¬ë©´ -
+		//ë¬¸ìžì—´ì€ ì „ì²´ê°€ ì•„ë‹Œ ì²«ê¸€ìž í¬ê¸°ë§Œ ë¹„êµí•œë‹¤.
 		
-		//--------¹®ÀÚ¿­À» ·£´ýÀ¸·Î Á¤·Ä-----------------------------------------------
+		//--------ë¬¸ìžì—´ì„ ëžœë¤ìœ¼ë¡œ ì •ë ¬-----------------------------------------------
 		Random rd = new Random();
 
 		for (int i = 0; i < 100; i++) {
@@ -58,7 +58,7 @@ public class Program2 {
 		
 		
 		
-		//-----------------------Å« °ªÀ¸·Î Á¤·Ä----------------------------
+		//-----------------------í° ê°’ìœ¼ë¡œ ì •ë ¬----------------------------
 		for(int j=0; j<6-1; j++)
 			for(int i=0;i<7-1-j; i++)
 				if(names[i].compareTo(names[i+1]) > 0) {

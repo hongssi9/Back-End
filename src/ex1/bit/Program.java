@@ -17,9 +17,9 @@ public class Program {
 				
 
 		FileInputStream fis = new FileInputStream("res/img.bmp");
-		//ÀÌ¹ÌÁö ÆÄÀÏÀ» ÀĞ±â À§ÇØ ÆÄÀÏÀÔ·Â ½ºÆ®¸²À» fis·Î »ı¼º
+		//ì´ë¯¸ì§€ íŒŒì¼ì„ ì½ê¸° ìœ„í•´ íŒŒì¼ì…ë ¥ ìŠ¤íŠ¸ë¦¼ì„ fisë¡œ ìƒì„±
 		int b;
-		//2¹ÙÀÌÆ®
+		//2ë°”ì´íŠ¸
 		b = fis.read();
 		b = fis.read();
 		
@@ -38,15 +38,15 @@ public class Program {
  		
  		fileSize = b4<<24|b3<<16|b2<<8|b1;
 		
-		//10Áø¼ö : 23
-		//8Áø¼ö : 023
-		//2Áø¼ö : 0b10
-		//16Áø¼ö : 0x00 
+		//10ì§„ìˆ˜ : 23
+		//8ì§„ìˆ˜ : 023
+		//2ì§„ìˆ˜ : 0b10
+		//16ì§„ìˆ˜ : 0x00 
 		
-		//2Áø¼ö -> 1ºñÆ®
-		//4Áø¼ö -> 2ºñÆ®
-		//8Áø¼ö -> 3ºñÆ®
-		//16Áø¼ö -> 4ºñÆ®
+		//2ì§„ìˆ˜ -> 1ë¹„íŠ¸
+		//4ì§„ìˆ˜ -> 2ë¹„íŠ¸
+		//8ì§„ìˆ˜ -> 3ë¹„íŠ¸
+		//16ì§„ìˆ˜ -> 4ë¹„íŠ¸
 		
 		
 		fileSize = (b4&0x000000ff) <<8*3 |  //[b4][ ][ ][ ]
@@ -73,13 +73,13 @@ public class Program {
 //		
 //		Scanner sc = new Scanner(System.in);
 //		
-//		System.out.println("Á¡¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+//		System.out.println("ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
 //		
 //		kor = sc.nextInt();
 //		eng = sc.nextInt();
 //		math = sc.nextInt();
 //		
-//		System.out.printf("±¹¾î : %d ¿µ¾î : %d ¼öÇĞ : %d ",kor, eng, math);
+//		System.out.printf("êµ­ì–´ : %d ì˜ì–´ : %d ìˆ˜í•™ : %d ",kor, eng, math);
 //		
 //		FileOutputStream fos = new FileOutputStream("C:\\2021-02-19\\workspace\\Javaprj\\data.txt");
 //		PrintStream ps = new PrintStream(fos);

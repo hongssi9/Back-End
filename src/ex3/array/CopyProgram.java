@@ -8,30 +8,30 @@ import java.io.IOException;
 public class CopyProgram {
 
 	public static void main(String[] args) throws IOException {
-		//1. res/img.bmp ÆÄÀÏÀ» ÀĞ±â À§ÇÑ FileInputStream °´Ã¼ fis¸¦ »ı¼ºÇÏ°í
-		//	 res/img_copy.bmp ÆÄÀÏ·Î ¾²±â À§ÇÑ FileOutputStream°´Ã¼ fos¸¦ »ı¼ºÇÑ´Ù
+		//1. res/img.bmp íŒŒì¼ì„ ì½ê¸° ìœ„í•œ FileInputStream ê°ì²´ fisë¥¼ ìƒì„±í•˜ê³ 
+		//	 res/img_copy.bmp íŒŒì¼ë¡œ ì“°ê¸° ìœ„í•œ FileOutputStreamê°ì²´ fosë¥¼ ìƒì„±í•œë‹¤
 		FileInputStream fis = new FileInputStream("res/img.bmp");
 		FileOutputStream fos = new FileOutputStream("res/img_copy.bmp");
 		
 		
-		//2. fis¸¦ ÅëÇØ¤Ã 1¹ÙÀÌÆ®¸¦ ÀĞ¾î¼­ byte º¯¼ö b¿¡ ´ã´Â´Ù.
+		//2. fisë¥¼ í†µí•´ã…“ 1ë°”ì´íŠ¸ë¥¼ ì½ì–´ì„œ byte ë³€ìˆ˜ bì— ë‹´ëŠ”ë‹¤.
 		int size = 0;
 		
 		byte[]buf = new byte[1000];
 		
-		while((size = fis.read(buf)) != -1) {		// ! <- ºÎÁ¤ ¿¬»êÀÚ ³ÖÀ¸¸é ÀÚµ¿À¸·Î ¿¬»êÀÚ ¼Ó¼ºÀÌ ¹Ù²ñ 	
-			fos.write(buf); 					// != °°Áö ¾Ê´Ù, -1ÀÌ µÉ¶§±îÁö ÆÄÀÏÀ» °è¼Ó ÀĞ´Â´Ù(ÀĞÀ» ÆÄÀÏÀÌ ¾øÀ¸¸é read°¡ -1·Î ÀĞ¾î¿Â´Ù-´õÀÌ»ó ÀĞÀ»°Ô ¾ø±â ¶§¹®¿¡)
-		//¹è¿­À» ÀÌ¿ëÇÑ´Ù¸é ¹İº¹¹®À» »ç¿ëÇÒ ¶§ ´õ ºü¸£´Ù.
+		while((size = fis.read(buf)) != -1) {		// ! <- ë¶€ì • ì—°ì‚°ì ë„£ìœ¼ë©´ ìë™ìœ¼ë¡œ ì—°ì‚°ì ì†ì„±ì´ ë°”ë€œ 	
+			fos.write(buf); 					// != ê°™ì§€ ì•Šë‹¤, -1ì´ ë ë•Œê¹Œì§€ íŒŒì¼ì„ ê³„ì† ì½ëŠ”ë‹¤(ì½ì„ íŒŒì¼ì´ ì—†ìœ¼ë©´ readê°€ -1ë¡œ ì½ì–´ì˜¨ë‹¤-ë”ì´ìƒ ì½ì„ê²Œ ì—†ê¸° ë•Œë¬¸ì—)
+		//ë°°ì—´ì„ ì´ìš©í•œë‹¤ë©´ ë°˜ë³µë¬¸ì„ ì‚¬ìš©í•  ë•Œ ë” ë¹ ë¥´ë‹¤.
 			
 			
 		}
-		//3. 2¹øÀ» ´õ ÀÌ»ó ÀĞ¾îµéÀÎ °ªÀÌ ¾øÀ» ¶§±îÁö ¹İº¹ÇÑ´Ù.
+		//3. 2ë²ˆì„ ë” ì´ìƒ ì½ì–´ë“¤ì¸ ê°’ì´ ì—†ì„ ë•Œê¹Œì§€ ë°˜ë³µí•œë‹¤.
 		
-		//4. ¸ğµç ½ºÆ®¸² °´Ã¼¸¦ ´İ´Â´Ù.
+		//4. ëª¨ë“  ìŠ¤íŠ¸ë¦¼ ê°ì²´ë¥¼ ë‹«ëŠ”ë‹¤.
 		fis.close();
 		fos.close();
 		
-		System.out.println("º¹»ç¿Ï·á");
+		System.out.println("ë³µì‚¬ì™„ë£Œ");
 	}
 
 }

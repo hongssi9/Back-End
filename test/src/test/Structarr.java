@@ -1,10 +1,10 @@
-package ex4.struct;
+package test;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Program {
+public class Structarr {
 
 	public static void main(String[] args) throws IOException {
 
@@ -41,6 +41,13 @@ public class Program {
 			fscan.nextLine(); //첫번째줄을 읽어서 버림
 			
 			
+			
+			//1. 몇번을 도는 포문을 만들어줌
+			//2. 줄을 읽을 함수를 선언
+			//3. 한줄에 몇개의 저장할 문장이 있는지 배열을 만듦
+			//4. 참조할 객체를 선언
+			//5. 객체에 담을 문장을 넣어줌
+			//6. 참조변수를 담을 배열을 선언해줌
 
 			for (int i = 0; i < count; i++) {
 				line = fscan.nextLine();  //한줄 읽은걸 다른 배열이나 조건문에 넣기위해 문자열 변수에다가 값을 넣어준거(다른곳에 쓰기위해서)

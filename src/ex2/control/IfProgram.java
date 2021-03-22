@@ -5,23 +5,23 @@ import java.util.Scanner;
 public class IfProgram {
 
 	public static void main(String[] args) {
-		//1. »ç¿ëÀÚ·ÎºÎÅÍ Á¤¼ö °ªÀ» ÀÔ·Â ¹Ş¾Æ¼­ º¯¼ö x¿¡ ÀúÀåÇÑ´Ù.
+		//1. ì‚¬ìš©ìë¡œë¶€í„° ì •ìˆ˜ ê°’ì„ ì…ë ¥ ë°›ì•„ì„œ ë³€ìˆ˜ xì— ì €ì¥í•œë‹¤.
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.printf("Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À",sc);
+		System.out.printf("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤",sc);
 		int x = sc.nextInt();
 		
 		
-		//1-1 ¸¸¾à ±× °ªÀÌ 3º¸´Ù Å©¸é "Å« °ª" ÀÌ¶ó´Â ¹®ÀÚ¿­À» Ãâ·ÂÇÑ´Ù.
+		//1-1 ë§Œì•½ ê·¸ ê°’ì´ 3ë³´ë‹¤ í¬ë©´ "í° ê°’" ì´ë¼ëŠ” ë¬¸ìì—´ì„ ì¶œë ¥í•œë‹¤.
 	    if( x % 2 == 0) {
-	    	System.out.print("Â¦¼ö");
-	    System.out.println(" °ª");
+	    	System.out.print("ì§ìˆ˜");
+	    System.out.println(" ê°’");
 	    }
 	    if ( x % 2 == 1) {
-	    System.out.print("È¦¼ö");
-	    System.out.println(" °ª");
+	    System.out.print("í™€ìˆ˜");
+	    System.out.println(" ê°’");
 	    }
-	    System.out.println("ÇÁ·Î±×·¥ ³¡!");
+	    System.out.println("í”„ë¡œê·¸ë¨ ë!");
 	    
 		
 		

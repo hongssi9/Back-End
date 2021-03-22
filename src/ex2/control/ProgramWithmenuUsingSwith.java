@@ -6,21 +6,21 @@ public class ProgramWithmenuUsingSwith {
 
    public static void main(String[] args) {
 	   
-	 //scan ÀÌ¶ó´Â ÀÌ¸§À¸·Î Scanner °´Ã¼¸¦ »ı¼ºÇÏ°í
+	 //scan ì´ë¼ëŠ” ì´ë¦„ìœ¼ë¡œ Scanner ê°ì²´ë¥¼ ìƒì„±í•˜ê³ 
 //		Scanner scan = new Scanner(System.in);
 //		
-//		//scanÀ» ÀÌ¿ëÇØ¼­ Á¤¼ö°ªÀ» ÀÔ·Â ¹Ş¾Æ º¯¼ö ans¿¡ ´ã´Â´Ù
+//		//scanì„ ì´ìš©í•´ì„œ ì •ìˆ˜ê°’ì„ ì…ë ¥ ë°›ì•„ ë³€ìˆ˜ ansì— ë‹´ëŠ”ë‹¤
 //		int ans = scan.nextInt();
 //		
-//		//ans °ªÀÌ 3º¸´Ù Å©¸é 2¸¦ °ÅÁşÀÌ¸é 3À» x º¯¼ö¿¡ ´ã¾Æ¼­
-//		int x = (ans > 3) ? 2:3; //ans°¡ 3º¸´Ù Å©¸é? ÀÌ¶ó´Â Á¶°ÇÀ» °É¾î Å©¸é = Âü ÀÛÀ¸¸é = °ÅÁş
+//		//ans ê°’ì´ 3ë³´ë‹¤ í¬ë©´ 2ë¥¼ ê±°ì§“ì´ë©´ 3ì„ x ë³€ìˆ˜ì— ë‹´ì•„ì„œ
+//		int x = (ans > 3) ? 2:3; //ansê°€ 3ë³´ë‹¤ í¬ë©´? ì´ë¼ëŠ” ì¡°ê±´ì„ ê±¸ì–´ í¬ë©´ = ì°¸ ì‘ìœ¼ë©´ = ê±°ì§“
 //		
-//		//x º¯¼öÀÇ °ªÀ» Ãâ·ÂÇÑ´Ù
+//		//x ë³€ìˆ˜ì˜ ê°’ì„ ì¶œë ¥í•œë‹¤
 //		System.out.println(x);
 //-----------------------------------------------------------------
 	      
 	   
-      // ±âº»Çü½Ä : primitive type
+      // ê¸°ë³¸í˜•ì‹ : primitive type
       int kor, eng;
       int math;
       int total;
@@ -30,68 +30,68 @@ public class ProgramWithmenuUsingSwith {
       eng = 0;
       math = 0;
       
-      boolean more = true; //ºÒ¸®¾ğ(ºÎ¿ï) ÀÚ·áÇü¿¡ ´ëÀÔµÇ´Â °ªÀº Âü ¶Ç´Â °ÅÁş¸¸ °¡´ÉÇÏ´Ù
+      boolean more = true; //ë¶ˆë¦¬ì–¸(ë¶€ìš¸) ìë£Œí˜•ì— ëŒ€ì…ë˜ëŠ” ê°’ì€ ì°¸ ë˜ëŠ” ê±°ì§“ë§Œ ê°€ëŠ¥í•˜ë‹¤
       Scanner scan = new Scanner(System.in);
       
       EXIT:
       while(more)
       {
       int menu;
-      System.out.println("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤");
-      System.out.println("¦¢      ¡¡¸ŞÀÎ ¸Ş´º      ¦¢");
-      System.out.println("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥");
+      System.out.println("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”");
+      System.out.println("â”‚      ã€€ë©”ì¸ ë©”ë‰´      â”‚");
+      System.out.println("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜");
       
-      System.out.println("1. ¼ºÀûÀÔ·Â : ");
-      System.out.println("2. ¼ºÀûÃâ·Â : ");
-      System.out.println("3. Á¾·á : ");
+      System.out.println("1. ì„±ì ì…ë ¥ : ");
+      System.out.println("2. ì„±ì ì¶œë ¥ : ");
+      System.out.println("3. ì¢…ë£Œ : ");
       System.out.println(">");
-      menu = Integer.parseInt(scan.nextLine()); //°ªÀÌ intÀÎÁö °Ë»çÇÑ´Ù
-             //Integer.parseInt -> ¹®ÀÚ¿­À» ¼ıÀÚ·Î º¯È¯½ÃÅ°´Â ÇÔ¼ö
-      		 //nextLine -> ¿£ÅÍ¸¦ Ä¡±â Àü±îÁö ¾´ ¹®ÀÚ¿­
-             //next -> ½ºÆäÀÌ½º, °ø¹é Àü±îÁö ÀÔ·Â¹ŞÀº ¹®ÀÚ¿­
-      		 //nextInt -> ½ºÆäÀÌ½º, °ø¹é Àü±îÁö ÀÔ·Â¹ŞÀº ¼ıÀÚ
+      menu = Integer.parseInt(scan.nextLine()); //ê°’ì´ intì¸ì§€ ê²€ì‚¬í•œë‹¤
+             //Integer.parseInt -> ë¬¸ìì—´ì„ ìˆ«ìë¡œ ë³€í™˜ì‹œí‚¤ëŠ” í•¨ìˆ˜
+      		 //nextLine -> ì—”í„°ë¥¼ ì¹˜ê¸° ì „ê¹Œì§€ ì“´ ë¬¸ìì—´
+             //next -> ìŠ¤í˜ì´ìŠ¤, ê³µë°± ì „ê¹Œì§€ ì…ë ¥ë°›ì€ ë¬¸ìì—´
+      		 //nextInt -> ìŠ¤í˜ì´ìŠ¤, ê³µë°± ì „ê¹Œì§€ ì…ë ¥ë°›ì€ ìˆ«ì
       
       
       //menu = scan.nextInt();//System.in -> [4913 ]
-      //scan.nextLine() °ªÀ» ºñ¿öÁÜ
-      //1. [13        ] ¹öÆÛ°¡ ºñ¾îÀÖ¾î¾ß ÀĞ´Âµ¥ ´õ¹Ì°ªÀÌ ³²¾Æ¼­ 
+      //scan.nextLine() ê°’ì„ ë¹„ì›Œì¤Œ
+      //1. [13        ] ë²„í¼ê°€ ë¹„ì–´ìˆì–´ì•¼ ì½ëŠ”ë° ë”ë¯¸ê°’ì´ ë‚¨ì•„ì„œ 
       
       
       switch(menu) {
       
       case 1:
-    	  //menu°ªÀÌ 1ÀÌ¶ó¸é
-      System.out.println("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤");
-      System.out.println("¦¢      ¡¡¼ºÀû ÀÔ·Â      ¦¢");
-      System.out.println("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥");
+    	  //menuê°’ì´ 1ì´ë¼ë©´
+      System.out.println("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”");
+      System.out.println("â”‚      ã€€ì„±ì  ì…ë ¥      â”‚");
+      System.out.println("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜");
 
 
-      System.out.printf("±¹¾î : ");
-      kor = Integer.parseInt(scan.nextLine()); //2. ºó¹®ÀÚ°ªÀ» ÀĞ¾î ¿À·ù°¡ »ı±è
-      System.out.printf("¿µ¾î : ");
+      System.out.printf("êµ­ì–´ : ");
+      kor = Integer.parseInt(scan.nextLine()); //2. ë¹ˆë¬¸ìê°’ì„ ì½ì–´ ì˜¤ë¥˜ê°€ ìƒê¹€
+      System.out.printf("ì˜ì–´ : ");
       eng = Integer.parseInt(scan.nextLine());
-      System.out.printf("¼öÇĞ : ");
+      System.out.printf("ìˆ˜í•™ : ");
       math = Integer.parseInt(scan.nextLine());
       break;
       
       
       
       case 2:
-    	  //menu°ªÀÌ 2ÀÌ¶ó¸é
+    	  //menuê°’ì´ 2ì´ë¼ë©´
 
       total = kor + eng + math;
       avg = total / 3.0f;
 
-      System.out.println("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤");
-      System.out.println("¦¢             ¼ºÀû Ãâ·Â           ¦¢");
-      System.out.println("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥");
+      System.out.println("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”");
+      System.out.println("â”‚             ì„±ì  ì¶œë ¥           â”‚");
+      System.out.println("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜");
 
-      System.out.printf("±¹¾î : %d\n", kor);
-      System.out.printf("¿µ¾î : %d\n", eng);
-      System.out.printf("¼öÇĞ : %d\n", math);
+      System.out.printf("êµ­ì–´ : %d\n", kor);
+      System.out.printf("ì˜ì–´ : %d\n", eng);
+      System.out.printf("ìˆ˜í•™ : %d\n", math);
 
-      System.out.printf("ÃÑÁ¡ : %2d\n", total);
-      System.out.printf("Æò±Õ : %-6.2f\n", avg);  
+      System.out.printf("ì´ì  : %2d\n", total);
+      System.out.printf("í‰ê·  : %-6.2f\n", avg);  
       //more = scan.nextBoolean();
       break;
       

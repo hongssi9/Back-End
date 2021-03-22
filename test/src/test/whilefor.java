@@ -6,12 +6,12 @@ public class whilefor {
 
 			int tree = 0;
 			
-			while(tree < 10) { //10º¸´Ù ÀÛÀ¸¸é °è¼Ó ½ÇÇà
+			while(tree < 10) { //10ë³´ë‹¤ ìž‘ìœ¼ë©´ ê³„ì† ì‹¤í–‰
 				tree++;
-				System.out.printf("³ª¹«¸¦ %d ¹ø Âï´ÂÁßÀÔ´Ï´Ù.\n",tree);
+				System.out.printf("ë‚˜ë¬´ë¥¼ %d ë²ˆ ì°ëŠ”ì¤‘ìž…ë‹ˆë‹¤.\n",tree);
 				
 				if(tree == 10) {
-					System.out.println("³ª¹«°¡ ³Ñ¾î°©´Ï´Ù");
+					System.out.println("ë‚˜ë¬´ê°€ ë„˜ì–´ê°‘ë‹ˆë‹¤");
 				}
 			}
 		

@@ -10,15 +10,15 @@ public class Program4 {
 
 	public static void main(String[] args) throws IOException {
 		
-		//°ªÀ» ÀúÀåÇÏ´Â º¯¼ö : °ªº¯¼ö - Value Type ±âº»Çü½Ä
-		//ÂüÁ¶¸¦ ÇÏ´Â º¯¼ö : ÂüÁ¶º¯¼ö - Ref Type ±âº»Çü½ÄÀÌ ¾Æ´Ñ °æ¿ì
+		//ê°’ì„ ì €ìž¥í•˜ëŠ” ë³€ìˆ˜ : ê°’ë³€ìˆ˜ - Value Type ê¸°ë³¸í˜•ì‹
+		//ì°¸ì¡°ë¥¼ í•˜ëŠ” ë³€ìˆ˜ : ì°¸ì¡°ë³€ìˆ˜ - Ref Type ê¸°ë³¸í˜•ì‹ì´ ì•„ë‹Œ ê²½ìš°
 		
-		//°ª º¯¼ö¿Í ÂüÁ¶ º¯¼ö
-		//°ªº¯¼ö - ´ã´Â °ø°£À» °¡Áö´Â º¯¼ö
-		//ÂüÁ¶ º¯¼ö´Â ´ãÀ» °ø°£ÀÌ ¾øÀ¸¸ç °´Ã¼¸¦ °¡¸®Å°±â À§ÇÑ º¯¼ö
+		//ê°’ ë³€ìˆ˜ì™€ ì°¸ì¡° ë³€ìˆ˜
+		//ê°’ë³€ìˆ˜ - ë‹´ëŠ” ê³µê°„ì„ ê°€ì§€ëŠ” ë³€ìˆ˜
+		//ì°¸ì¡° ë³€ìˆ˜ëŠ” ë‹´ì„ ê³µê°„ì´ ì—†ìœ¼ë©° ê°ì²´ë¥¼ ê°€ë¦¬í‚¤ê¸° ìœ„í•œ ë³€ìˆ˜
 		
 //		int x=3;
-//		String s= "hello"; ½ÇÁúÀûÀÎ °ø°£Àº "hello"ÀÚÃ¼°¡ °¡Áö°í ÀÖ°í º¯¼ö s´Â Çï·Î¸¦ È°¿ëÇÏ±âÀ§ÇÑ Ä¸½¶ 
+//		String s= "hello"; ì‹¤ì§ˆì ì¸ ê³µê°„ì€ "hello"ìžì²´ê°€ ê°€ì§€ê³  ìžˆê³  ë³€ìˆ˜ sëŠ” í—¬ë¡œë¥¼ í™œìš©í•˜ê¸°ìœ„í•œ ìº¡ìŠ 
 		
 		
 		FileInputStream fis = new FileInputStream("res/covid.txt");
@@ -37,7 +37,7 @@ public class Program4 {
 			total += Integer.parseInt(data[3]);
 		}
 			
-			System.out.printf("ÃÑÇÕ%d",total);
+			System.out.printf("ì´í•©%d",total);
 		
 		
 			fis.close();

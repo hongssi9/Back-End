@@ -1,5 +1,5 @@
 import java.util.Scanner;
-//java.utillÆĞÅ°Áö ³»¿¡ Á¸ÀçÇÔÀ¸·Î ÀÓÆúÆ®½ÃÄÑ ²¨³» »ç¿ë
+//java.utillíŒ¨í‚¤ì§€ ë‚´ì— ì¡´ì¬í•¨ìœ¼ë¡œ ì„í´íŠ¸ì‹œì¼œ êº¼ë‚´ ì‚¬ìš©
 
 public class scanner {
 
@@ -14,32 +14,32 @@ public class scanner {
 		String str;
 		
 		Scanner sc = new Scanner(System.in);
-		//Scanner È­¸éÀ¸·ÎºÎÅÍ µ¥ÀÌÅÍ¸¦ ÀÔ·Â¹Ş´Â ±â´ÉÀ» Á¦°øÇÏ´Â Å¬·¡½º
-		//°´Ã¼ »ı¼º
+		//Scanner í™”ë©´ìœ¼ë¡œë¶€í„° ë°ì´í„°ë¥¼ ì…ë ¥ë°›ëŠ” ê¸°ëŠ¥ì„ ì œê³µí•˜ëŠ” í´ë˜ìŠ¤
+		//ê°ì²´ ìƒì„±
 		
-		System.out.println("ÀÔ·Â¶õ");
+		System.out.println("ì…ë ¥ë€");
 		kor = sc.nextInt();
 		eng = sc.nextInt();
 		math = sc.nextInt();
 		
 		str = sc.nextLine();
-		//Stirng str = sc.nextLine(); º¯¼ö¼±¾ğ?
+		//Stirng str = sc.nextLine(); ë³€ìˆ˜ì„ ì–¸?
 		
-		// String next() ´ÙÀ½ ÅäÅ«À» ¹®ÀÚ¿­·Î ¸®ÅÏ 
-		// int nextInt() ´ÙÀ½ ÅäÅ«À» int Å¸ÀÔÀ¸·Î ¸®ÅÏ
-		//String nextLine()  ' \n 'À» Æ÷ÇÔÇÏ´Â ÇÑ ¶óÀÎÀ» ÀĞ°í ' \n 'À» ¹ö¸° ³ª¸ÓÁö¸¸ ¸®ÅÏ 
+		// String next() ë‹¤ìŒ í† í°ì„ ë¬¸ìì—´ë¡œ ë¦¬í„´ 
+		// int nextInt() ë‹¤ìŒ í† í°ì„ int íƒ€ì…ìœ¼ë¡œ ë¦¬í„´
+		//String nextLine()  ' \n 'ì„ í¬í•¨í•˜ëŠ” í•œ ë¼ì¸ì„ ì½ê³  ' \n 'ì„ ë²„ë¦° ë‚˜ë¨¸ì§€ë§Œ ë¦¬í„´ 
 		
-		System.out.printf("±¹¾îÁ¡¼ö : %d\n",kor); 
-		System.out.printf("¿µ¾îÁ¡¼ö : %d\n",eng);
-		System.out.printf("¼öÇĞÁ¡¼ö : %d\n",math); //ctr+art º¹»ç
+		System.out.printf("êµ­ì–´ì ìˆ˜ : %d\n",kor); 
+		System.out.printf("ì˜ì–´ì ìˆ˜ : %d\n",eng);
+		System.out.printf("ìˆ˜í•™ì ìˆ˜ : %d\n",math); //ctr+art ë³µì‚¬
 		
-		System.out.printf("¹®ÀÚ¿­ Ãâ·Â : %s\n",str);
+		System.out.printf("ë¬¸ìì—´ ì¶œë ¥ : %s\n",str);
 		
 		total = kor+eng+math;
 		avg = total/3.0;
 		
-		System.out.printf("ÃÑÁ¡ %d\n",total);
-		System.out.printf("Æò±Õ %f\n",avg);
+		System.out.printf("ì´ì  %d\n",total);
+		System.out.printf("í‰ê·  %f\n",avg);
 		
 		
 	}

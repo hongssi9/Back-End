@@ -8,13 +8,13 @@ public class Program {
 		// TODO Auto-generated method stub
 		
 		Random rand = new Random();
-		//1. kors¶ó´Â ÀÌ¸§ÀÇ Á¤¼ö 6°³Â¥¸® ¹è¿­À» »ı¼ºÇØÁÖ½Ã¿À.
+		//1. korsë¼ëŠ” ì´ë¦„ì˜ ì •ìˆ˜ 6ê°œì§œë¦¬ ë°°ì—´ì„ ìƒì„±í•´ì£¼ì‹œì˜¤.
 		int[] kors = new int[6];
 		
-		//2. korsÀÇ 3¹øÂ° ¹æ¿¡ 36À» ´ã°í ½Í½À´Ï´Ù.
-		kors[2] = 36; //0ºÎÅÍ ½ÃÀÛÀÎ°É ±â¾ïÇÏÀÚ
+		//2. korsì˜ 3ë²ˆì§¸ ë°©ì— 36ì„ ë‹´ê³  ì‹¶ìŠµë‹ˆë‹¤.
+		kors[2] = 36; //0ë¶€í„° ì‹œì‘ì¸ê±¸ ê¸°ì–µí•˜ì
 		
-		//Random °´Ã¼
+		//Random ê°ì²´
 		for(int i=0;i<6;i++)
 			kors[i]=rand.nextInt(45)+1;
 		

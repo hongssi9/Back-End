@@ -6,8 +6,8 @@ public class Casting {
 		// TODO Auto-generated method stub
 		
 		String s_num = "10";
-		int i_num = Integer.parseInt(s_num); //String -> Int 1¹ø¹æ½Ä
-		int i_num2 = Integer.valueOf(s_num); //String -> Int 2¹ø¹æ½Ä
+		int i_num = Integer.parseInt(s_num); //String -> Int 1ë²ˆë°©ì‹
+		int i_num2 = Integer.valueOf(s_num); //String -> Int 2ë²ˆë°©ì‹
 		
 		String snum = "10";
 		double d_num = Double.valueOf(s_num); //String -> Double

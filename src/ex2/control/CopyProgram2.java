@@ -13,9 +13,9 @@ public class CopyProgram2 {
 		FileOutputStream fos = new FileOutputStream("res/img_copy.bmp");
 		
 //		int b = 0;
-//		while((b = fis.read()) != -1) {		// ! <- ºÎÁ¤ ¿¬»êÀÚ ³ÖÀ¸¸é ÀÚµ¿À¸·Î ¿¬»êÀÚ ¼Ó¼ºÀÌ ¹Ù²ñ 	
+//		while((b = fis.read()) != -1) {		// ! <- ë¶€ì • ì—°ì‚°ìž ë„£ìœ¼ë©´ ìžë™ìœ¼ë¡œ ì—°ì‚°ìž ì†ì„±ì´ ë°”ë€œ 	
 //			fos.write(b); 	
-		// != °°Áö ¾Ê´Ù, -1ÀÌ µÉ¶§±îÁö ÆÄÀÏÀ» °è¼Ó ÀÐ´Â´Ù(ÀÐÀ» ÆÄÀÏÀÌ ¾øÀ¸¸é read°¡ -1·Î ÀÐ¾î¿Â´Ù-´õÀÌ»ó ÀÐÀ»°Ô ¾ø±â ¶§¹®¿¡)
+		// != ê°™ì§€ ì•Šë‹¤, -1ì´ ë ë•Œê¹Œì§€ íŒŒì¼ì„ ê³„ì† ì½ëŠ”ë‹¤(ì½ì„ íŒŒì¼ì´ ì—†ìœ¼ë©´ readê°€ -1ë¡œ ì½ì–´ì˜¨ë‹¤-ë”ì´ìƒ ì½ì„ê²Œ ì—†ê¸° ë•Œë¬¸ì—)
 		int b;
 		do {
 			b = fis.read();
@@ -31,7 +31,7 @@ public class CopyProgram2 {
 		fis.close();
 		fos.close();
 		
-		System.out.println("º¹»ç¿Ï·á");
+		System.out.println("ë³µì‚¬ì™„ë£Œ");
 	}
 
 }

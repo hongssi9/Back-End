@@ -9,10 +9,10 @@ public class Program {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
-		// 1.¹®ÀÚ¿­ 10°³ Â¥¸® names ¹è¿­À» »ı¼ºÇÑ´Ù.
+		// 1.ë¬¸ìì—´ 10ê°œ ì§œë¦¬ names ë°°ì—´ì„ ìƒì„±í•œë‹¤.
 		String[] names = new String[10];
 
-		// 2. ÆÄÀÏ¿¡¼­ ÀÌ¸§µéÀ» ÀĞ¾î¿Í¼­ names ¹è¿­¿¡ ´ëÀÔÇÑ´Ù.
+		// 2. íŒŒì¼ì—ì„œ ì´ë¦„ë“¤ì„ ì½ì–´ì™€ì„œ names ë°°ì—´ì— ëŒ€ì…í•œë‹¤.
 		FileInputStream fis = new FileInputStream("res/names.txt");
 		Scanner fscan = new Scanner(fis);
 
@@ -43,7 +43,7 @@ public class Program {
 
 //		}
 
-		// 3. names ¹è¿­ÀÇ ÀÌ¸§À» ´ÙÀ½Ã³·³ ÄÜ¼Ö¿¡ Ãâ·ÂÇÑ´Ù.
+		// 3. names ë°°ì—´ì˜ ì´ë¦„ì„ ë‹¤ìŒì²˜ëŸ¼ ì½˜ì†”ì— ì¶œë ¥í•œë‹¤.
 
 	}
 

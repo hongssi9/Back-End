@@ -7,26 +7,26 @@ public class scanner {
 	public static void main(String[] args) {
 		int kor, math, eng, total;
 		double avg;
-		Scanner sc = new Scanner(System.in); //System.inÀº È­¸é¿¡¼­ Ãâ·ÂÀ» ¹Ş°Ú´Ù´Â ¶æ.
+		Scanner sc = new Scanner(System.in); //System.inì€ í™”ë©´ì—ì„œ ì¶œë ¥ì„ ë°›ê² ë‹¤ëŠ” ëœ».
 		
-		System.out.println("-----------¼ºÀû ÀÔ·Â-------------");
-		System.out.println("±¹¾îÁ¡¼ö");
+		System.out.println("-----------ì„±ì  ì…ë ¥-------------");
+		System.out.println("êµ­ì–´ì ìˆ˜");
 		kor = sc.nextInt();
-		System.out.println("¼öÇĞÁ¡¼ö");
+		System.out.println("ìˆ˜í•™ì ìˆ˜");
 		math = sc.nextInt();
-		System.out.println("¿µ¾îÁ¡¼ö");
+		System.out.println("ì˜ì–´ì ìˆ˜");
 		eng = sc.nextInt();
 		
 		total = kor+math+eng;
 		avg = total/3;
 		
 		
-		System.out.println("-----------¼ºÀû Ãâ·Â-------------");
-		System.out.printf("±¹¾îÁ¡¼ö : %d",kor);
-		System.out.printf("¼öÇĞÁ¡¼ö : %d",math);
-		System.out.printf("¿µ¾îÁ¡¼ö : %d",eng);
-		System.out.printf("ÃÑÇÕ : %d",total);
-		System.out.printf("Æò±Õ : %s",avg);
+		System.out.println("-----------ì„±ì  ì¶œë ¥-------------");
+		System.out.printf("êµ­ì–´ì ìˆ˜ : %d",kor);
+		System.out.printf("ìˆ˜í•™ì ìˆ˜ : %d",math);
+		System.out.printf("ì˜ì–´ì ìˆ˜ : %d",eng);
+		System.out.printf("ì´í•© : %d",total);
+		System.out.printf("í‰ê·  : %s",avg);
 		
 		
 		

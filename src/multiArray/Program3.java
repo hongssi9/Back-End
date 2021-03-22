@@ -9,24 +9,24 @@ public class Program3 {
 	public static void main(String[] args) throws IOException {
 		String[][] rows;
 		int count = 0;
-		// ·¹ÄÚµå °³¼ö¸¦ ¾Ë¾Æ³»´Â ÄÚµå (count)
+		// ë ˆì½”ë“œ ê°œìˆ˜ë¥¼ ì•Œì•„ë‚´ëŠ” ì½”ë“œ (count)
 		{
 			FileInputStream text = new FileInputStream("res/covid.txt");
 			Scanner sc = new Scanner(text);
 			String line = sc.nextLine();
 
-			// while ¹İº¹ÇÏ¸é¼­ count++¿¬»êÀ»ÇÑ´Ù ->¸¶Áö¸· ÁÙÀ» ¸¸³¯ ¶§±îÁö
+			// while ë°˜ë³µí•˜ë©´ì„œ count++ì—°ì‚°ì„í•œë‹¤ ->ë§ˆì§€ë§‰ ì¤„ì„ ë§Œë‚  ë•Œê¹Œì§€
 			while (sc.hasNext()) {
 				line = sc.nextLine();
 				count++;
 			}
 
-			System.out.printf("Ä«¿îÅÍ : %d\n", count);
+			System.out.printf("ì¹´ìš´í„° : %d\n", count);
 
 		}
 
-		covid19[] list = new covid
-		// count¿¡¼­ ¹ŞÀº °ªÀ¸·Î ÃÑ ¸îÁÙÀÎÁö ¾Ë¾ÒÀ¸´Ï±î ±×°ÍÀ¸·Î ¹è¿­¿¡´Ù°¡ °ªÀ» ÀúÀåÇÏ´Â ÄÚµå
+		
+		// countì—ì„œ ë°›ì€ ê°’ìœ¼ë¡œ ì´ ëª‡ì¤„ì¸ì§€ ì•Œì•˜ìœ¼ë‹ˆê¹Œ ê·¸ê²ƒìœ¼ë¡œ ë°°ì—´ì—ë‹¤ê°€ ê°’ì„ ì €ì¥í•˜ëŠ” ì½”ë“œ
 		{
 			rows = new String[count][];
 			FileInputStream text = new FileInputStream("res/covid.txt");
@@ -40,19 +40,19 @@ public class Program3 {
 
 		}
 
-		// ¹è¿­¿¡ ÀúÀåµÈ °ªÀ» ¸î¹øÂ° Ç×¸ñÀÎÁö Ã£¾Æ¼­ ±×°É ÇÕÇÏ´Â ÄÚµå
+		// ë°°ì—´ì— ì €ì¥ëœ ê°’ì„ ëª‡ë²ˆì§¸ í•­ëª©ì¸ì§€ ì°¾ì•„ì„œ ê·¸ê±¸ í•©í•˜ëŠ” ì½”ë“œ
 		{
 			int total = 0;
 
 			for (int i = 0; i < count; i++) {
-				total += Integer.parseInt(rows[i][3]); // rows[i] Ã³À½ºÎÅÍ ³¡±îÁö ÁÙ¿¡ °ªÀ» ´õÇØ¾ßÇÏ´Ï±î Æ÷ºĞÀ» µ¹·ÁÁÖ´Â°ÅÀÓ
+				total += Integer.parseInt(rows[i][3]); // rows[i] ì²˜ìŒë¶€í„° ëê¹Œì§€ ì¤„ì— ê°’ì„ ë”í•´ì•¼í•˜ë‹ˆê¹Œ í¬ë¶„ì„ ëŒë ¤ì£¼ëŠ”ê±°ì„
 			}
 
-			System.out.printf("°Ë»çÁøÇàÀÚ¼ö ÃÑ ÇÕ: %d\n", total);
+			System.out.printf("ê²€ì‚¬ì§„í–‰ììˆ˜ ì´ í•©: %d\n", total);
 
 		}
 		{
-			// °¡Àå ¸¹Àº °Ë»ç¼ö¿Í ±× ³¯ÀÚ.
+			// ê°€ì¥ ë§ì€ ê²€ì‚¬ìˆ˜ì™€ ê·¸ ë‚ ì.
 			int max = 0;
 			int index = -1;
 			for (int i = 0; i < count; i++) {
@@ -61,28 +61,28 @@ public class Program3 {
 					index = i;
 				}
 			}
-			System.out.printf("°¡Àå ¸¹Àº °Ë»ç¼ö : %d\n", max);
-			System.out.printf("°Ë»ç¼ö°¡ °¡Àå ¸¹¾Ò´ø ³¯ : %s\n", rows[index][0]);
+			System.out.printf("ê°€ì¥ ë§ì€ ê²€ì‚¬ìˆ˜ : %d\n", max);
+			System.out.printf("ê²€ì‚¬ìˆ˜ê°€ ê°€ì¥ ë§ì•˜ë˜ ë‚  : %s\n", rows[index][0]);
 		}
 
-		// È®ÁøÀÚ ¼ö°¡ ´Ã¾î³­ ÀÏÀÚ¿Í ¼ö¸¦ Ãâ·ÂÇÏ½Ã¿À.
+		// í™•ì§„ì ìˆ˜ê°€ ëŠ˜ì–´ë‚œ ì¼ìì™€ ìˆ˜ë¥¼ ì¶œë ¥í•˜ì‹œì˜¤.
 		{
 
-			String dates = ""; // ³¯ÀÚ´Â ¹®ÀÚ¿­ÀÌ´Ï±î ¹®ÀÚ¿­À» ´ãÀ» º¯¼ö ¼±¾ğ
-			int diff = 0; // ´Ã¾î³­ ¼ö¸¦ ÀúÀåÇÒ º¯¼ö
+			String dates = ""; // ë‚ ìëŠ” ë¬¸ìì—´ì´ë‹ˆê¹Œ ë¬¸ìì—´ì„ ë‹´ì„ ë³€ìˆ˜ ì„ ì–¸
+			int diff = 0; // ëŠ˜ì–´ë‚œ ìˆ˜ë¥¼ ì €ì¥í•  ë³€ìˆ˜
 
-			int old = 0; // ÇöÀç È®ÁøÀÚ ¼ö
+			int old = 0; // í˜„ì¬ í™•ì§„ì ìˆ˜
 
 			int index = 0;
 
 			for (int i = 0; i < count; i++) {
 				int currents = Integer.parseInt(rows[i][1]);
 
-				if (old != currents) { // È®ÁøÀÚ¼ö¿Í ÀÔ·Â¹ŞÀº i¿­¿¡ È®ÁøÀÚ¼ö°¡ °°Áö ¾Ê´Ù¸é
+				if (old != currents) { // í™•ì§„ììˆ˜ì™€ ì…ë ¥ë°›ì€ iì—´ì— í™•ì§„ììˆ˜ê°€ ê°™ì§€ ì•Šë‹¤ë©´
 
 					diff = currents - old;
 
-					dates = rows[i][0]; // ³¯ÀÚ
+					dates = rows[i][0]; // ë‚ ì
 
 					old = currents;
 
@@ -92,7 +92,7 @@ public class Program3 {
 			}
 		}
 
-		// È®ÁøÀÚ ¼ö°¡ ´Ã¾î³­ ÀÏÀÚ¿Í ¼ö¸¦ ´ÙÀ½ ¹è¿­¿¡ ´ã¾ÆÁÖ½Ã¿À.
+		// í™•ì§„ì ìˆ˜ê°€ ëŠ˜ì–´ë‚œ ì¼ìì™€ ìˆ˜ë¥¼ ë‹¤ìŒ ë°°ì—´ì— ë‹´ì•„ì£¼ì‹œì˜¤.
 		String[][] results;
 		int resultcount = 0;
 
@@ -100,9 +100,9 @@ public class Program3 {
 			int old = 0;
 
 			for (int i = 0; i < count; i++) {
-				int currents = Integer.parseInt(rows[i][1]); // i¹øÂ° ÇàÀÇ È®ÁøÀÚ¼ö
+				int currents = Integer.parseInt(rows[i][1]); // ië²ˆì§¸ í–‰ì˜ í™•ì§„ììˆ˜
 
-				// i¹øÂ° È®ÁøÀÚ(current)¿Í ÀÌÀü È®ÁøÀÚ¼ö(old)°¡ ´Ù¸£´Ù¸é
+				// ië²ˆì§¸ í™•ì§„ì(current)ì™€ ì´ì „ í™•ì§„ììˆ˜(old)ê°€ ë‹¤ë¥´ë‹¤ë©´
 				if (old != currents) {
 					old = currents;
 					resultcount++;
@@ -115,11 +115,11 @@ public class Program3 {
 			System.out.println(resultcount);
 
 			results = new String[resultcount][];
-			// ÀÌ¸§Ç¥ //°ø°£(°´Ã¼) °ø°£Àº ¾ÆÁ÷ ÇÒ´çx
-			// ¹°¸®ÀûÀ¸·Î´Â ÀÌ¸§µµ °ø°£ÀÌ ÀÖ±äÇÔ ÀÌ¸§Ç¥µµ ÁÖ¼Ò¸¦ ÀúÀåÇØ¾ßÇÏ´Ï±î(4byte)
-			String date = ""; // ³¯Â¥
-			int diff = 0; // Áõ°¡¼ö
-			old = 0; // ´ãÀ» °ª
+			// ì´ë¦„í‘œ //ê³µê°„(ê°ì²´) ê³µê°„ì€ ì•„ì§ í• ë‹¹x
+			// ë¬¼ë¦¬ì ìœ¼ë¡œëŠ” ì´ë¦„ë„ ê³µê°„ì´ ìˆê¸´í•¨ ì´ë¦„í‘œë„ ì£¼ì†Œë¥¼ ì €ì¥í•´ì•¼í•˜ë‹ˆê¹Œ(4byte)
+			String date = ""; // ë‚ ì§œ
+			int diff = 0; // ì¦ê°€ìˆ˜
+			old = 0; // ë‹´ì„ ê°’
 			int index = 0;
 
 			for (int i = 0; i < count; i++) {
@@ -130,8 +130,8 @@ public class Program3 {
 					date = rows[i][0];
 
 					String[] row = new String[2];
-					row[0] = date; // ³¯Â¥
-					row[1] = String.valueOf(diff); // ´Ã¾î³­ ¼ö row¿¡ ³Ö¾î¾ßÇÏ´Ï±î row´Â StringÀ¸·Î ¼±¾ğµÇ¾úÀ¸´Ï Çüº¯È¯ÇØÁÜ
+					row[0] = date; // ë‚ ì§œ
+					row[1] = String.valueOf(diff); // ëŠ˜ì–´ë‚œ ìˆ˜ rowì— ë„£ì–´ì•¼í•˜ë‹ˆê¹Œ rowëŠ” Stringìœ¼ë¡œ ì„ ì–¸ë˜ì—ˆìœ¼ë‹ˆ í˜•ë³€í™˜í•´ì¤Œ
 
 					results[index++] = row;
 

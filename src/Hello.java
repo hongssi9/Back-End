@@ -2,7 +2,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
-import java.util.Scanner; //ÆĞÅ°Áö¸í ³×ÀÓ½ºÆäÀÌ½º 
+import java.util.Scanner; //íŒ¨í‚¤ì§€ëª… ë„¤ì„ìŠ¤í˜ì´ìŠ¤ 
 
 import javax.imageio.stream.FileImageInputStream;
 
@@ -21,19 +21,19 @@ class Hello {
 		
 		//--------------------------------------------
 		FileInputStream fi = new FileInputStream("C:\\2021-02-19\\workspace\\Javaprj//data.txt");
-		//ÆÄÀÏ ÀÔ·Â ½ºÆ®¸² °´Ã¼¸¦ fi¶ó´Â ÀÌ¸§À¸·Î ¸¸µê
-		//ÆÄÀÏ·ÎºÎÅÍ ÀÔ·ÂÀ» ¹Ş´Â Å¬·¡½º (¸Ş¸ğÀå¿¡¼­ ÀĞ¾î¿È)
+		//íŒŒì¼ ì…ë ¥ ìŠ¤íŠ¸ë¦¼ ê°ì²´ë¥¼ fië¼ëŠ” ì´ë¦„ìœ¼ë¡œ ë§Œë“¦
+		//íŒŒì¼ë¡œë¶€í„° ì…ë ¥ì„ ë°›ëŠ” í´ë˜ìŠ¤ (ë©”ëª¨ì¥ì—ì„œ ì½ì–´ì˜´)
 		Scanner sc2 = new Scanner(fi);
-		// fis¸¦ Scanner·Î Æ÷ÀåÇØ¼­ »ç¿ë
+		// fisë¥¼ Scannerë¡œ í¬ì¥í•´ì„œ ì‚¬ìš©
 		kor = sc2.nextInt();
 		eng = sc2.nextInt();
 		math = sc2.nextInt();
-		fi.close(); //»ç¿ëÈÄ ´İ¾ÆÁà¾ß Ãæµ¹À» ¸·´Â´Ù
+		fi.close(); //ì‚¬ìš©í›„ ë‹«ì•„ì¤˜ì•¼ ì¶©ëŒì„ ë§‰ëŠ”ë‹¤
 		sc2.close();
 		
 		FileOutputStream fos = new FileOutputStream("C:\\2021-02-19\\workspace\\Javaprj//data.txt");
-		//Ãâ·ÂÀ» ³»º¸³»´Â Å¬·¡½º(ÀÔ·Â¹ŞÀº °ªÀ» ¸Ş¸ğÀåÀ¸·Î ³»º¸³¿)
-		PrintStream fout = new PrintStream(fos);//System.outÀÌ PrintStreamÀÇ °´Ã¼ÀÓ
+		//ì¶œë ¥ì„ ë‚´ë³´ë‚´ëŠ” í´ë˜ìŠ¤(ì…ë ¥ë°›ì€ ê°’ì„ ë©”ëª¨ì¥ìœ¼ë¡œ ë‚´ë³´ëƒ„)
+		PrintStream fout = new PrintStream(fos);//System.outì´ PrintStreamì˜ ê°ì²´ì„
 		kor++;
 		eng++;
 		
@@ -44,21 +44,21 @@ class Hello {
 	
 		//--------------------------------------------
 		/*
-		 * System.out.print("±¹¾î ÀÔ·Â : "); String line = sc.next(); line = sc.next();
-		 * System.out.printf("±¹¾î = %s\n", line);
+		 * System.out.print("êµ­ì–´ ì…ë ¥ : "); String line = sc.next(); line = sc.next();
+		 * System.out.printf("êµ­ì–´ = %s\n", line);
 		 * 
-		 * System.out.print("¿µ¾î ÀÔ·Â : "); line = sc.next();
-		 * System.out.printf("¿µ¾î ÀÔ·Â = %s\n", line);
+		 * System.out.print("ì˜ì–´ ì…ë ¥ : "); line = sc.next();
+		 * System.out.printf("ì˜ì–´ ì…ë ¥ = %s\n", line);
 		 * 
-		 * System.out.printf("¼öÇĞ ÀÔ·Â : "); line = sc.next();
-		 * System.out.printf("¼öÇĞ = %s\n", line);
+		 * System.out.printf("ìˆ˜í•™ ì…ë ¥ : "); line = sc.next();
+		 * System.out.printf("ìˆ˜í•™ = %s\n", line);
 		 * 
 		 * 
-		 * System.out.println("±¹¾î"); kor = sc.nextInt(); System.out.println("¿µ¾î"); eng =
-		 * sc.nextInt(); System.out.println("¼öÇĞ"); math = sc.nextInt();
+		 * System.out.println("êµ­ì–´"); kor = sc.nextInt(); System.out.println("ì˜ì–´"); eng =
+		 * sc.nextInt(); System.out.println("ìˆ˜í•™"); math = sc.nextInt();
 		 * 
-		 * System.out.printf("±¹¾î : %d\n",kor); System.out.printf("¿µ¾î : %d\n",eng);
-		 * System.out.printf("¼öÇĞ : %d\n",math);
+		 * System.out.printf("êµ­ì–´ : %d\n",kor); System.out.printf("ì˜ì–´ : %d\n",eng);
+		 * System.out.printf("ìˆ˜í•™ : %d\n",math);
 		 */
 		
 		//----------------------------------------------------
@@ -68,39 +68,39 @@ class Hello {
 		
 
 		total = kor + eng + math;
-		avg = total / 3.0;  //ÀÚ·á°ªÀÌ ´Ù¸¥°É ¿¬»êÇÒ¼ö´Â ¾øÀ½ ÀÚ¹Ù°¡ °°Àº Çü½ÄÀ¸·Î ¹Ù²ã¼­ Çüº¯È¯ÇÏ¿© ¿¬»êÇÏ±â ¶§¹®ÀÓ
-		                  //Æò±Õ : 72.000 
-							//¿À¸¥ÂÊÀ» ¸ÕÀú °è»êÀ» ÇÏ°í avg 
+		avg = total / 3.0;  //ìë£Œê°’ì´ ë‹¤ë¥¸ê±¸ ì—°ì‚°í• ìˆ˜ëŠ” ì—†ìŒ ìë°”ê°€ ê°™ì€ í˜•ì‹ìœ¼ë¡œ ë°”ê¿”ì„œ í˜•ë³€í™˜í•˜ì—¬ ì—°ì‚°í•˜ê¸° ë•Œë¬¸ì„
+		                  //í‰ê·  : 72.000 
+							//ì˜¤ë¥¸ìª½ì„ ë¨¼ì € ê³„ì‚°ì„ í•˜ê³  avg 
 		
-		//avg = total / 3; À¸·Î ÇÏ°ÔµÇ¸é Çüº¯È¯À¸·Î ¹Ù²ãÁÖÁö¸¸ Á¤È®ÇÑ °á°ú°¡ Àß·Á¼­ ³ª¿È?
-		//Æò±Õ : 72.667 
-		
-		
+		//avg = total / 3; ìœ¼ë¡œ í•˜ê²Œë˜ë©´ í˜•ë³€í™˜ìœ¼ë¡œ ë°”ê¿”ì£¼ì§€ë§Œ ì •í™•í•œ ê²°ê³¼ê°€ ì˜ë ¤ì„œ ë‚˜ì˜´?
+		//í‰ê·  : 72.667 
 		
 		
-		  System.out.println("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤");
-		  System.out.println("¦¢ ¼ºÀû Ãâ·Â           ");
-		  System.out.println("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥");
+		
+		
+		  System.out.println("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”");
+		  System.out.println("â”‚ ì„±ì  ì¶œë ¥           ");
+		  System.out.println("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜");
 		  
-		  System.out.printf("±¹¾î : %d\n",kor); System.out.printf("¿µ¾î : %d\n",eng);
-		  System.out.printf("¼öÇĞ : %d\n",math);
+		  System.out.printf("êµ­ì–´ : %d\n",kor); System.out.printf("ì˜ì–´ : %d\n",eng);
+		  System.out.printf("ìˆ˜í•™ : %d\n",math);
 		  
 		  
-		  System.out.printf("ÃÑÁ¡ : %d\n",total);
-		  System.out.printf("Æò±Õ : %-10.5f\n",avg);
+		  System.out.printf("ì´ì  : %d\n",total);
+		  System.out.printf("í‰ê·  : %-10.5f\n",avg);
 		 
 		
 		
 		//--------------------------------------------------------------
 		/*
-		 * Scanner scan = new Scanner(System.in); //Scanner ¸¦ new¸¦ ÅëÇØ ¸¸µå´Â...
+		 * Scanner scan = new Scanner(System.in); //Scanner ë¥¼ newë¥¼ í†µí•´ ë§Œë“œëŠ”...
 		 * 
 		 * 
-		 * System.out.print("±¹¾î Á¡¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À : ");
+		 * System.out.print("êµ­ì–´ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤ : ");
 		 * 
-		 * String line = scan.next(); //º¯¼ö ¼±¾ğ System.out.printf("line = %s\n", line);
+		 * String line = scan.next(); //ë³€ìˆ˜ ì„ ì–¸ System.out.printf("line = %s\n", line);
 		 * 
-		 * line = scan.next(); //next °ø¹é(½ºÆäÀÌ½º¹Ù)¸¸³ª´Â ÁöÁ¡±îÁö Ãâ·Â
+		 * line = scan.next(); //next ê³µë°±(ìŠ¤í˜ì´ìŠ¤ë°”)ë§Œë‚˜ëŠ” ì§€ì ê¹Œì§€ ì¶œë ¥
 		 * System.out.printf("line = %s\n", line);
 		 * 
 		 * kor = scan.nextInt(); System.out.printf("kor =  %s\n",kor);
@@ -133,7 +133,7 @@ class Hello {
 	 * int code2 = System.in.read(); System.out.printf("code is : %d \n",code2-48);
 	 * System.out.printf("code is : %c \n",code2);
 	 * 
-	 * System.out.printf("±¹¾î¼ºÁ¤ = %d\n", (code1-48)*10+(code2-48));
+	 * System.out.printf("êµ­ì–´ì„±ì • = %d\n", (code1-48)*10+(code2-48));
 	 * 
 	 */		
 //------------------------------------------------------------------

@@ -10,18 +10,18 @@ public class Program5 {
 		
 			
 		
-			String[] row1 = new String[10]; //10°³ ¹è¿­ »ı¼º
+			String[] row1 = new String[10]; //10ê°œ ë°°ì—´ ìƒì„±
 			String[] row2 = new String[10];
 			
 			FileInputStream fis = new FileInputStream("res/covid.txt");
 			Scanner sc = new Scanner(fis);
 			
-			String line; //¹®ÀÚ¿­ line º¯¼ö »ı¼º
+			String line; //ë¬¸ìì—´ line ë³€ìˆ˜ ìƒì„±
 			
-			sc.nextLine(); //ÀÔ·Â¹Ş¾Æ¿Â sc¿¡¼­ ÇÑÁÙÀ» ÀĞ¾î¿È
+			sc.nextLine(); //ì…ë ¥ë°›ì•„ì˜¨ scì—ì„œ í•œì¤„ì„ ì½ì–´ì˜´
 						
-			line = sc.nextLine(); //¹®ÀÚ¿­ º¯¼ö line¿¡ ¶Ç´Ù½Ã ÇÑ¹ø ÇÑÁÙÀ» ÀĞ¾î¿Â´Ù (Ã¹Â°ÁÙÀº ¹ö¸²)
-			row1=line.split(","); //¹è¿­ row1¿¡ split","À¸·Î ³ª´²ÁÜ 
+			line = sc.nextLine(); //ë¬¸ìì—´ ë³€ìˆ˜ lineì— ë˜ë‹¤ì‹œ í•œë²ˆ í•œì¤„ì„ ì½ì–´ì˜¨ë‹¤ (ì²«ì§¸ì¤„ì€ ë²„ë¦¼)
+			row1=line.split(","); //ë°°ì—´ row1ì— split","ìœ¼ë¡œ ë‚˜ëˆ ì¤Œ 
 			
 			line = sc.nextLine();
 			row2=line.split(",");

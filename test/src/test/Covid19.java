@@ -1,4 +1,4 @@
-package ex4.struct;
+package test;
 
 public class Covid19 {
 
