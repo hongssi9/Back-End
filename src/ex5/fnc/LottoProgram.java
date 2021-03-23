@@ -3,6 +3,8 @@ package ex5.fnc;
 public class LottoProgram {
 
 	public static void main(String[] args) {
+		
+		//로또 만드는 프로그램을 함수로 나누어 만들자
 		//로또를 만들자
 		int[] lotto;
 		
