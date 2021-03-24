@@ -42,6 +42,7 @@ public class Program {
 		
 		for (int i = 0; i < 6; i++) {
 			lotto.nums[i] = rand.nextInt(45) + 1;
+			//테스트 새로운 커밋
 		}
 
 		return lotto;
