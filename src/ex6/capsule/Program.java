@@ -13,7 +13,7 @@ public class Program {
 	
 		int[] lotto;
 		// 로또를 만들자
-
+		
 		lotto = Lotto.gen();
 		// 로또를 출력하자
 		print(lotto);
