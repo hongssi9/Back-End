@@ -2,7 +2,7 @@ package ex7.상속.IS_A;
 
 public class Exam {
 	
-	private int kor; //인스턴스화 하면 자동으로 데이터형으로 초기화가 되지만
+	public int kor; //인스턴스화 하면 자동으로 데이터형으로 초기화가 되지만
 					 // private로 막아 초기화가 되지않음
 	private int eng;
 	private int math;
@@ -17,7 +17,7 @@ public class Exam {
 //		eng = 10;
 //		math = 10;
 		
-		this(10,10,10); //아래 인자값이 3개인 함수를 참조한다.
+		this(20,20,20); //아래 인자값이 3개인 함수를 참조한다.
 	}
 	
 	//오버로드 생성자

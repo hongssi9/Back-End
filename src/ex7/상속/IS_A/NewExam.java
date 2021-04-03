@@ -6,7 +6,7 @@ public class NewExam extends Exam {
 	public NewExam() {
 		//super(); 아무것도 없으면 이클립스에서 자동으로 super()생성
 //		com = 10;
-//		this(1,1,1,1); //인자값이 4개인 아래 함수로 넘어감
+		this(10,10,10,10 ); //인자값이 4개인 아래 함수로 넘어감
 	}
 
 	public NewExam(int kor, int eng, int math, int com) {
