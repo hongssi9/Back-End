@@ -24,16 +24,19 @@ public class Calc extends HttpServlet {
 		// 1.입/출력 도구가 추가되었다
 		int x = 0;
 		int y = 0;
-		int result = 0;
+		int result = 0; //더한 값을 위한 변수
+	
 		String x_ = null;
 		String y_ = null;
-		String r_ = req.getParameter("r");
+		String r_ = req.getParameter("x"); //Request 객체의서 getParameter()메소드로 입력한 값을 가져올 수 있음
 
 		if (r_ != null)
 			result = Integer.parseInt(r_);
 
 		PrintWriter out = resp.getWriter();
-
+		
+		// Jasper (도구)
+		
 		out.write("<!DOCTYPE html>");
 		out.write("<html>");
 		out.write("<head>");
@@ -84,7 +87,7 @@ public class Calc extends HttpServlet {
 
 		// doGet 요청을 하는 것이 더 효율적이다.
 //			doGet(req, resp);
-		resp.sendRedirect("/add?r=" + result); // r값을 전달
+		resp.sendRedirect("/add?x=" + result); // r값을 전달
 		// get 요청하면서 get을 처리하는 로직에게 내가 만든 값 또는 상태를 전달할 수 있는 방법이 필요하다.
 //			get요청으로 상태유지 방법3가지
 		// 1. 파일을 이용하는 방법

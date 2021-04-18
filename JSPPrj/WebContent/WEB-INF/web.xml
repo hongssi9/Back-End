@@ -20,19 +20,19 @@
   xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
   version="4.0"
-  metadata-complete="false"> <!-- true:모든 설정이 다 web.xml에 있다 false 이곳 외에도 annotation이 있으니까 찾아봐라 -->
-  
+  metadata-complete="false">
+
+
   <servlet>
-    <servlet-name>na</servlet-name> <!-- 3. na서블릿 네임으로 지정한 -->
-    <servlet-class>com.newlecture.web.Nana</servlet-class> <!--4. 서블릿클래스 경로를 지정한 Nana가 실행된다.  -->	<!-- Nana클래스 경로 -->
+    <servlet-name>na</servlet-name>
+    <servlet-class>com.newlecture.web.Nana</servlet-class>    
   </servlet>
 
-  <servlet-mapping> <!-- 서블릿을 요청할 때 간단하게 경로를 표현해주는 것. --> 
-  <!--해당 servlet의 경로를 간단히 나타내주는 것이다. 이 값을 브라우저 url 뒤에 추가해주는 것이다.  -->
-    <servlet-name>na</servlet-name>	 <!-- 2. na라는 서블릿 네임을 호출하고 -->
-    <url-pattern>/nana</url-pattern> <!-- 1. nana라는url을 부르면 -->		<!-- nana라는 이름으로 요청해서 이에 해당되는 서블릿 클래스인 com.newlecture.web.Nana 를 실행한다. -->
-  </servlet-mapping>				 <!-- 실제라 nana라는건 없고 그냥 class를 실행하기위한 참조변수? 라고 생각 -->
-  
+  <servlet-mapping>
+    <servlet-name>na</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+
 
   <display-name>Welcome to Tomcat</display-name>
   <description>
